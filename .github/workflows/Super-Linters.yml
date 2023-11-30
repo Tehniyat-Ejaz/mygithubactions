@@ -1,0 +1,21 @@
+name: Super-Linter
+
+on: push
+
+jobs: 
+  super-lint:
+   name: Super Linter checker
+   runs-on: ubuntu-latest
+   steps:
+     -name: Checkout the repo code
+      uses: actions/checkout@v2
+    
+     -name: Run Super-linter
+      uses: github/super-linter@v3
+      env:
+        DEFAULT-BRANCH: main
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+     
+  
+  
