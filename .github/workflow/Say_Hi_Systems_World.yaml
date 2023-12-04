@@ -1,0 +1,28 @@
+name: Say Hi Systems World
+
+on: 
+ push: 
+  branches:
+   - main 
+ pull-request:
+  branches: 
+   - main
+ workflow-dispatches:
+
+jobs:
+  Hi: 
+   runs-on: ubuntu-latest
+   steps:
+      uses: actions/checkout@v2
+    - name: Say Hi to Systems World 
+      run: echo "Hi Systems World!!!!"
+      shell: bash
+
+  Goodbye: 
+   runs-on: ubuntu-latest
+   steps: 
+     - name: Say Goodbye 
+       run: echo "Goodbye!!!"
+
+  
+  
