@@ -2,7 +2,7 @@ name: Comment on a new created issues
 on:
   issues:
     types:
-      - [ opened , labeled ]
+      - [ opened ]
 jobs:
   add-comment:
     runs-on: ubuntu-latest
