@@ -10,11 +10,11 @@ jobs:
       - name: Checkout the repo code
         uses: actions/checkout@v4.1.1
     
-     #  -name: Run Super-linter
-     #   uses: github/super-linter@v3
-     #   env:
-     #     DEFAULT-BRANCH: main
-     #     SECRET_TOKEN: ${{ secrets.Secret_token }}
+      - name: Run Super-linter
+        uses: github/super-linter@v3
+        env:
+          DEFAULT-BRANCH: main
+          SECRET_TOKEN: ${{ secrets.Secret_token }}
       
      
   
