@@ -1,8 +1,8 @@
-name: Comment on a new created issues 
+name: Comment on a new created issues
 
 on: 
  issues:
-   types: [opened, labled]
+   types: [opened]
 
 jobs: 
   Comments-with-actions:
