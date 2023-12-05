@@ -1,20 +1,20 @@
-name: Comment on a new created issues
-on:
-  issues:
-    types: [opened]
-jobs:
-  add-comment:
-    runs-on: ubuntu-latest
-    permissions:
-      issues: write
-    steps:
-      - name: Add comment
-        run: gh issue comment "$NUMBER" --body "$BODY"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GH_REPO: ${{ github.repository }}
-          NUMBER: ${{ github.event.issue.number }}
-          BODY: >
-            Hi, This is multi-line issue 
-            Please resolve it by removing extra line. 
-            Thank you!!
+# name: Comment on a new created issues
+# on:
+#   issues:
+#     types: [opened]
+# jobs:
+#   add-comment:
+#     runs-on: ubuntu-latest
+#     permissions:
+#       issues: write
+#     steps:
+#       - name: Add comment
+#         run: gh issue comment "$NUMBER" --body "$BODY"
+#         env:
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#           GH_REPO: ${{ github.repository }}
+#           NUMBER: ${{ github.event.issue.number }}
+#           BODY: >
+#             Hi, This is multi-line issue 
+#             Please resolve it by removing extra line. 
+#             Thank you!!
