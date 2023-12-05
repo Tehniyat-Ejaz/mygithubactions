@@ -18,11 +18,10 @@ jobs:
          body: |
             This is a multi-line test comment
             - With GitHub **Markdown** :sparkles:
-            - Created by [create-or-update-comment][1]
+         #    - Created by [create-or-update-comment][1]
 
-             [1]: https://github.com/tehniyat-ejaz/mygithubactions
-         reactions: '+1'
-       env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+         #     [1]: https://github.com/tehniyat-ejaz/mygithubactions
+         # reactions: '+1'
+    
   
    
