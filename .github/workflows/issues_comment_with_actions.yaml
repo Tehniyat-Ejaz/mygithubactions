@@ -20,9 +20,9 @@ jobs:
             - With GitHub **Markdown** :sparkles:
             - Created by [create-or-update-comment][1]
 
-             [1]: https://github.com/peter-evans/create-or-update-comment
+             [1]: https://github.com/tehniyat-ejaz/mygithubactions
          reactions: '+1'
        env:
-          SECRET_TOKEN: ${{ secrets.SECRET_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   
    
